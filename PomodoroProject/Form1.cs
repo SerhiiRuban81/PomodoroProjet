@@ -11,5 +11,11 @@ namespace PomodoroProject
         {
             MessageBox.Show("Hello!");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TaskForm taskForm = new TaskForm();
+            taskForm.ShowDialog();
+        }
     }
 }

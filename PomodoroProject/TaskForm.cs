@@ -12,9 +12,12 @@ namespace PomodoroProject
 {
     public partial class TaskForm : Form
     {
-        public TaskForm()
+        private readonly PomoTask task;
+
+        public TaskForm(PomoTask task)
         {
             InitializeComponent();
+            this.task = task;
         }
 
         private void button1_Click(object sender, EventArgs e)

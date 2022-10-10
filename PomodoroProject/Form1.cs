@@ -14,7 +14,8 @@ namespace PomodoroProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TaskForm taskForm = new TaskForm();
+            PomoTask pomoTask = new PomoTask() { Id = 1, Title = "Learn Git" };
+            TaskForm taskForm = new TaskForm(pomoTask);
             taskForm.ShowDialog();
         }
     }
